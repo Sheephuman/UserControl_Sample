@@ -1,0 +1,23 @@
+﻿<Window x:Class="UserControl_Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserControl_Sample"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+        <StackPanel Orientation="Vertical">
+            <Button Click="LoaddIniButton_Click"
+            x:Name="LoaddIniButton" Width="100" Height="50" Content="Load Ini" />
+            <Button Click="WriteIniButton_Click"
+     x:Name="WriteIniButton" Width="100" Height="50" Content="Write Ini"/>
+            <StackPanel x:Name="mainPanel">            
+              <!--ここにUserControlが追加されます。-->
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
